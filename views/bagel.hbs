@@ -1,0 +1,76 @@
+
+<div class="page-header" id="page-header">
+    <h1>{{title}}</h1>
+</div>
+<!-- Prompt user to log in -->
+{{#unless user}}
+<div class="container">
+  <div class="jumbotron" style="text-align:center">
+      <div class="row">
+        <div class="col-md-5">
+         <p><a style="padding:20px; width:200px" href="/bagels/signup" type="submit" class="btn btn-success btn-lg">Sign up</a></p>
+        </div>
+        <div class="col-md-5">
+          <p><a style="padding:20px; width:200px" href="/bagels/login" type="submit" class="btn btn-warning btn-lg">Login</a></p>
+        </div>
+    </div>
+  </div>
+</div>
+{{/unless}}
+
+<!-- Display only if logged in -->
+{{#if user}}
+<div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          
+          <p>Welcome back, {{user.username}}!</p>
+          
+          <div style="text-align:center">
+          <h3>Did you eat a bagel?</h3>
+          <input type="submit" value="YES!" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#bagel-create" >  
+          </div>
+          <hr>
+          <p> You have eaten {{qty}} bagels so far.</p>
+          <hr>
+          <div class="bagelFact" style="backgroundColor:#ddd">
+    			<p style="font-weight:bold"> A delicious bagel fact:</p>{{bagelFact}}
+          </div>
+        </div>
+        <div class="col-md-5">
+        	<br><br>
+          <img src="{{img}}" alt="bagel" align="center" width="35%" height="35%" hspace="20" />
+       </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="bagel-create" tabindex="-1" role="dialog" aria-labelledby="createBagelModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="createBagelModal">Create bagel</h4>
+      </div>
+      <div class="modal-body">
+
+      <form method="POST" action="">
+
+	Date: <input type="date" name="date"><br><br>
+	Type: <input type="text" name="type"><br><br>
+	Butter? <input type="checkbox" name="butter">&emsp;
+	Cream Cheese? <input type="checkbox" name="creamCheese">&emsp;
+	Other topping?  <input type="text" name="other"><br><br>
+	Toasted? <input type="checkbox" name="toasted">
+  <input type="hidden" name="user" value="{{user}}">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-primary"></input>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{{/if}}
+      

@@ -1,0 +1,84 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat');
+@import url('http://fonts.googleapis.com/css?family=Kaushan+Script');
+
+html {
+  background-color: #FFFFE3;
+  text-align: center;
+}
+
+h1{
+    margin: 1em 0;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #FF9800;
+}
+
+input {
+  padding:5px;
+  font-weight: bold;
+  border: transparent;
+}
+input[type=text] {
+  font-size: 1.6em;
+  font-family: 'Kaushan Script', serif;
+  border-bottom: 2.5px solid #263248;
+  background: #FFFFE3;
+  text-align: center;
+  margin-left: 20px;
+  width: 200px;
+  color: #34324b;
+}
+input[type=submit] {
+  font-size: 1em;
+  margin-left: 20px;
+  height: 40px;
+  width: 110px;
+  background: #FF9800;
+  color: white;
+}
+input[type=submit]:hover {
+  background: #7E8AA2;
+  color: white;
+}
+body {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 18%;
+  margin-right: 18%;
+  color: #263248;
+}
+ul {
+  padding:10px;
+  text-align: center;
+  width: 70%;
+  list-style-type: none;
+}
+li {
+  text-align: left;
+  background-color: transparent;
+  padding: 10px;
+}
+li:nth-child(odd) {
+    background-color: white;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+#back {
+    border: transparent;
+    background: transparent;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2em;
+    color: #FF9800;
+}
+#back:hover {
+    left: 5px;
+    color: black;
+    background: transparent;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{title}}</title>
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/sticky-footer.css" rel="stylesheet">
+
+  </head>
+  <body> 
+
+ <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="nlp" href="/">AIT Final</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+
+            <li><a href="/">Home</a></li>
+            <li><a href="/bagels">Bagel Tracker</a></li>
+            <li><a href="/haiku">Haiku Generator</a></li>
+            <li><a href="/bobst">Where Can I Print In Bobst?</a></li>
+
+            <li class="dropdown">
+              <a href="/ait" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AIT Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/ait/birds">Busy Birder</a></li>
+                <li><a href="/ait/matchicode">Matchicode</a></li>
+                <!--<li><a href="/ait/list">Shoppy Shopperson</a></li>-->
+                <li><a href="/ait/movies-db">MoviesDB</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container" id="birds-container">
+         {{{body}}}
+    </div>
+
+    <!--
+    <footer class="footer" id="footer">
+      <div class="container" id="footer">
+        <p class="text-muted"></p>
+      </div>
+    </footer> -->
+ 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/javascripts/bootstrap.min.js"></script>
+
+	</div>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+[submodule "haiku-generator"]
+	path = haiku-generator
+	url = https://github.com/kcp288/haiku-generator/

@@ -1,0 +1,26 @@
+<head>
+	<link href="/stylesheets/movies.css" rel="stylesheet">
+</head>
+
+<button id="back" type="button" onclick="location.href='/ait/'"> &lt; </button>
+<div class="container" style="text-align:center; margin:auto">
+
+<h1> Let's watch movies</h1>
+
+<form action="" method="get">
+  Director:<input type="text" id="director" name="director" value="{{director}}">
+  <input id="btn" type="submit" value"Filter">
+ </form>
+
+{{#if director}}
+Showing only movies directed by:<span style="color:black">{{director}}</span>
+{{/if}}
+
+<ul id="movies-list" class="center">
+  {{#each movies}}
+  <li>{{title}}-{{director}}</li>
+  {{/each}}
+</ul>
+</div>
+
+<script src="/javascripts/movies.js"></script>

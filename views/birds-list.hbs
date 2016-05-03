@@ -1,0 +1,23 @@
+<head>
+    <link href="/stylesheets/busy-birder.css" rel="stylesheet">
+</head>
+<button id="back" type="button" onclick="location.href='/ait/'"> &lt; </button>
+
+<hr style="color:#fff; background-color:#fff">
+<h3 style="color:#2b997d"> BIRD SIGHTINGS </h3>
+<ul>
+{{#each birds}}
+  <li><span style="color:#2b997d">{{this.sightings}}</span> x {{this.name}} </li>
+{{/each}}
+</ul>
+
+<form method="POST" action="">
+	<input type="text" name="bird">
+	<input type="submit">
+</form>
+
+<hr>
+
+<div id="footer"><br><br> <a href="./">Home</a>  &emsp;| &emsp; <a href="./list">Birds</a> &emsp;| &emsp; <a href="./settings">Settings</a></div>
+
+<script src="/javascripts/birds_style.js"></script>

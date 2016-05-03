@@ -1,0 +1,50 @@
+.fix{
+    position:fixed;
+    bottom:0px;
+    left:60px;
+}
+.fixprinterll2{
+    position:fixed;
+    bottom:15px;
+}
+.fixprinterll1{
+    position:fixed;
+    bottom:80px;
+}
+.fixprinter1{
+    position:fixed;
+    bottom:163px;
+}
+.fixprinter3{
+    position:fixed;
+    bottom:257px;
+}
+.fixprinter4{
+    position:fixed;
+    bottom:321px;
+}
+.fixprinter5{
+    position:fixed;
+    bottom:384px;
+}
+.fixprinter6{
+    position:fixed;
+    bottom:448px;
+}
+div.absolute {
+    position: absolute;
+    left:0px;
+    width: 475px;
+    height: 539px;
+    border: 1px solid #fff;
+}
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+.vertical-center {
+  min-height: 80vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
